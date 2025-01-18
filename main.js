@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const navList = document.querySelector('.navList');
     const navLinks = document.querySelectorAll('.navList a');
 
-    
-    function closeNav() {
-        navList.classList.remove('active');
-    }
-
-    
     menuIcon.addEventListener('click', function () {
-        navList.classList.toggle('active');
+        if (navList.style.display === 'block') {
+            navList.style.display = 'none';
+        } else {
+            navList.style.display = 'block';
+        }
     });
 
-   
     navLinks.forEach(function (link) {
-        link.addEventListener('click', closeNav);
+        link.addEventListener('click', function () {
+            navList.style.display = 'none';
+        });
     });
+
 });
