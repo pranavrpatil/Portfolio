@@ -113,12 +113,6 @@ header .logo span {
     padding: 12px 25px;
 }
 
-.symbol{
-    color: white;
-    font-size: larger;
-    font-weight: 600;
-    margin-left: 10px;
-}
 /* About Section */
 .about {
     display: flex;
@@ -180,7 +174,7 @@ header .logo span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 .skills li {
@@ -189,11 +183,10 @@ header .logo span {
     padding: 20px;
     font-size: 18px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px purple;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     width: 200px;
     text-align: center;
-    /* box-shadow: 2px 2px 5px purple; */
 }
 
 .skills li:hover {
