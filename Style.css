@@ -38,6 +38,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+    background-color:  rgba(63, 57, 57, 0.6);
 }
 
 header .top .logo {
@@ -111,6 +112,8 @@ header .logo span {
 .home-text .btn {
     font-size: 18px;
     padding: 12px 25px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .symbol{
