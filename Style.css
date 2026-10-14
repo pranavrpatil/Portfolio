@@ -393,23 +393,46 @@ header .logo span {
     background-clip: text;
 }
 
-.skills ul {
+.skill-groups {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.skills li {
+.skill-group {
+    padding: 28px;
+    text-align: left;
     background: var(--card-gradient);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.skill-group h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    padding: 30px 20px;
-    font-size: 18px;
+    padding: 12px 18px;
+    font-size: 16px;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 12px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -1151,8 +1174,7 @@ header .logo span {
         font-size: 36px;
     }
 
-    .skills ul {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    .skill-groups {
         gap: 20px;
     }
 
@@ -1248,7 +1270,7 @@ header .logo span {
         font-size: 28px;
     }
 
-    .skills ul {
+    .skill-groups {
         grid-template-columns: 1fr;
     }
 
